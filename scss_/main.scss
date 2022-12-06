@@ -2,7 +2,9 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 
-
+.bg-image{
+  background-image: url('../images/gradient-bg.png');
+}
 // themes
 // $primary: rgb(0, 66, 151);
 // $secondary: rgb(0, 255, 21);
