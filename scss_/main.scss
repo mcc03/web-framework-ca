@@ -1,7 +1,24 @@
 // import functions
 @import "../node_modules/bootstrap/scss/functions";
 
+// gradients
+.bg-image-test {
+  background-color:#99a3ff;
+  background-image:
+  radial-gradient(at 60% 76%, hsla(141,81%,79%,1) 0px, transparent 50%),
+  radial-gradient(at 72% 66%, hsla(302,91%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 23% 66%, hsla(184,75%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 70% 55%, hsla(110,83%,66%,1) 0px, transparent 50%);
+}
 
+.card-bg-1 {
+  background-color:#a299ff;
+  background-image:
+  radial-gradient(at 100% 98%, hsla(347,74%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 38% 30%, hsla(203,76%,60%,1) 0px, transparent 50%);
+}
+
+// gradient images set as classes
 .bg-image{
   background-image: url('../images/gradient-bg.png');
 }
@@ -13,15 +30,36 @@
   background-position: center;
 }
 
-.bg-image-3 {
-  background-image: url('../images/gradient-5.png');
+.bg-grad-pink {
+  background-image: url('../images/gradient-pink.png');
   overflow: hidden;
   background-size: cover;
   background-position: center;
 }
 
-.bg-image-4 {
-  background-image: url('../images/gradient-1-sm.png');
+.bg-grad-rose {
+  background-image: url('../images/gradient-rose.png');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-5 {
+  background-image: url('../images/gradient-2.png');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-6 {
+  background-image: url('../images/gradient-7.png');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-7 {
+  background-image: url('../images/gradient-6.png');
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -55,14 +93,12 @@ $spacers: (
 @import "../node_modules/bootstrap/scss/mixins";
 
 // custom colours
-// $custom-colors: (
-//     "primary-light": rgb(237, 222, 249),
-//     "secondary-light": rgb(246, 246, 246),
-// );
+$custom-colors: (
+    "surface-layer": #1E1E1E,
+    "customborder": #49454F,
+);
 
 // merge our colours with the theme
-// $theme-colors: map-merge($theme-colors, $custom-colors);
-
-
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
