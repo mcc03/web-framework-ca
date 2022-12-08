@@ -23,6 +23,10 @@
   background-image: url('../images/gradient-bg.png');
 }
 
+.icon-gradient{
+  background-image: url('../images/gradient-1.png');
+}
+
 .bg-image-2 {
   background-image: url('../images/gradient-3.png');
   overflow: hidden;
@@ -96,6 +100,7 @@ $spacers: (
 $custom-colors: (
     "surface-layer": #1E1E1E,
     "customborder": #49454F,
+    "icon": url('../images/gradient-1.png')
 );
 
 // merge our colours with the theme
