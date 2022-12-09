@@ -70,7 +70,7 @@
 }
 
 // themes
-// $primary: rgb(0, 66, 151);
+// $primary: rgb(118, 151, 0);
 // $secondary: rgb(0, 255, 21);
 // $light: rgb(0, 0, 0);
 
@@ -100,7 +100,7 @@ $spacers: (
 $custom-colors: (
     "surface-layer": #1E1E1E,
     "customborder": #49454F,
-    "icon": url('../images/gradient-1.png')
+    "dark-background": #121212,
 );
 
 // merge our colours with the theme
