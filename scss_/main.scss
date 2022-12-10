@@ -1,6 +1,10 @@
 // import functions
 @import "../node_modules/bootstrap/scss/functions";
 
+.cards-wrapper {
+  display: flex;
+}
+
 // gradients
 .bg-image-test {
   background-color:#99a3ff;
@@ -98,13 +102,23 @@ $spacers: (
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
 
 // custom colours
 $custom-colors: (
     "surface-layer": #1E1E1E,
     "customborder": #49454F,
-    "dark-background": #121212,
+    "darkbg": #121212,
+    "testing": red,
 );
 
 // merge our colours with the theme
