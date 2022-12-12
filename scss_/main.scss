@@ -5,6 +5,11 @@
   display: flex;
 }
 
+.image-profile {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
 // gradients
 .bg-image-test {
   background-color:#99a3ff;
@@ -84,7 +89,6 @@ $enable-shadows: true;
 $enable-gradients: true;
 $enable-negative-margins: true;
 
-
 // spacers
 $spacer: 1rem !default;
 $spacers: (
@@ -101,17 +105,6 @@ $spacers: (
 // variables & mixins
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
-@media (min-width: 768px) {
-  .carousel-inner {
-    display: flex;
-  }
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-}
 
 // custom colours
 $custom-colors: (
