@@ -36,13 +36,6 @@
   background-image: url('../images/gradient-1.png');
 }
 
-.bg-image-2 {
-  background-image: url('../images/gradient-3.png');
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
 .bg-grad-pink {
   background-image: url('../images/gradient-pink.png');
   overflow: hidden;
@@ -57,15 +50,8 @@
   background-position: center;
 }
 
-.bg-image-5 {
+.bg-grad-green {
   background-image: url('../images/gradient-2.png');
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-image-6 {
-  background-image: url('../images/gradient-7.png');
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -109,6 +95,7 @@ $spacers: (
 // custom colours
 $custom-colors: (
     "surface-layer": #1E1E1E,
+    "star": yellow,
     "customborder": #49454F,
     "darkbg": #121212,
     "testing": red,
