@@ -26,11 +26,21 @@
   radial-gradient(at 70% 55%, hsla(110,83%,66%,1) 0px, transparent 50%);
 }
 
+.card-grad {
+  color: rgb(2,0,36);
+  color: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(255,84,5,1) 0%, rgba(255,218,0,1) 100%);
+
+}
+
 .card-bg-1 {
   background-color:#a299ff;
   background-image:
   radial-gradient(at 100% 98%, hsla(347,74%,64%,1) 0px, transparent 50%),
   radial-gradient(at 38% 30%, hsla(203,76%,60%,1) 0px, transparent 50%);
+}
+
+.gradient-1 {
+  color: url('../images/gradient-1.png');
 }
 
 // gradient images set as classes
@@ -78,10 +88,17 @@
   );
 }
 
+// custom shadows
 .my-shadow {
   box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
   -webkit-box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
   -moz-box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
+}
+
+.card-shadow {
+  box-shadow: -10px 8px 16px -7px rgba(235, 4, 4, 0.884);
+  -webkit-box-shadow: -10px 8px 16px -7px rgba(209, 21, 21, 0.829);
+  -moz-box-shadow: -10px 8px 16px -7px rgb(255, 0, 0);
 }
 
 // themes
@@ -108,6 +125,15 @@ $spacers: (
   7: $spacer * 5,
 ) !default;
 
+// border radius
+$border-radius:               .375rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .5rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
+$my-custom-radius:            12px;
+
 // variables & mixins
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -120,6 +146,7 @@ $custom-colors: (
     "darkbg": #121212,
     "testing": red,
     "ticket-icon": #FF6B00,
+    "link": #2790F4,
 );
 
 // merge our colours with the theme
