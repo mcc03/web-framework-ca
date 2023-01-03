@@ -48,6 +48,12 @@
   background-image: url('../images/gradient-bg.png');
 }
 
+.testing {
+  background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(0, 255, 98));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .icon-gradient{
   background-image: url('../images/gradient-1.png');
 }
@@ -144,9 +150,9 @@ $custom-colors: (
     "star": #EB6E00,
     "customborder": #49454F,
     "darkbg": #121212,
-    "testing": red,
     "ticket-icon": #FF6B00,
     "link": #2790F4,
+    "light-blue": #727272,
 );
 
 // merge our colours with the theme
