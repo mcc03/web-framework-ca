@@ -1,6 +1,12 @@
 // import functions
 @import "../node_modules/bootstrap/scss/functions";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;');
+
+.body {
+  font-family: 'Montserrat';
+}
+
 .cards-wrapper {
   display: flex;
 }
@@ -64,6 +70,20 @@
   background-position: center;
 }
 
+.hover-overlay {
+  background: linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.5),
+    rgba(91, 14, 214, 0.5) 100%
+  );
+}
+
+.my-shadow {
+  box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
+  -webkit-box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
+  -moz-box-shadow: -10px 8px 16px -7px rgba(0,0,0,0.4);
+}
+
 // themes
 // $primary: rgb(118, 151, 0);
 // $secondary: rgb(0, 255, 21);
@@ -95,10 +115,11 @@ $spacers: (
 // custom colours
 $custom-colors: (
     "surface-layer": #1E1E1E,
-    "star": yellow,
+    "star": #EB6E00,
     "customborder": #49454F,
     "darkbg": #121212,
     "testing": red,
+    "ticket-icon": #FF6B00,
 );
 
 // merge our colours with the theme
