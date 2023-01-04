@@ -43,15 +43,19 @@
   color: url('../images/gradient-1.png');
 }
 
+.text-grad {
+  background: -webkit-linear-gradient(rgb(255, 198, 41), rgb(163, 50, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // gradient images set as classes
 .bg-image{
   background-image: url('../images/gradient-bg.png');
 }
 
-.testing {
-  background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(0, 255, 98));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.bg-peach-grad {
+  background-image: url('../images/peach-grad.png');
 }
 
 .icon-gradient{
@@ -131,18 +135,28 @@ $spacers: (
   7: $spacer * 5,
 ) !default;
 
-// border radius
-$border-radius:               .375rem;
-$border-radius-sm:            .25rem;
-$border-radius-lg:            .5rem;
-$border-radius-xl:            1rem;
-$border-radius-2xl:           2rem;
-$border-radius-pill:          50rem;
-$my-custom-radius:            12px;
-
 // variables & mixins
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+
+// custom radius
+$utilities: ();
+$custom-utilities: (
+	"custom-border-radius": (
+		property: border-radius,
+		class: br,
+		values: (
+			0: 0,
+			card: $spacer * 0.75,
+			card-sm: $spacer * 1.25,
+			3: $spacer * 1.5,
+			4: $spacer * 2,
+			5: $spacer * 2.5,
+			6: $spacer * 3,
+		),
+	),
+);
+$utilities: map-merge($utilities, $custom-utilities);
 
 // custom colours
 $custom-colors: (

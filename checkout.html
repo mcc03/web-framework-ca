@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Browse Trades</a>
@@ -66,6 +66,7 @@
       </div>
   
       <div class="row g-5">
+        <!-- basket start -->
         <div class="col-md-5 col-lg-4 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-primary">Your are trading</span>
@@ -86,9 +87,12 @@
             </li>
         
         </div>
+        <!-- basket end -->
+
+        <!-- form start -->
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Enter account details</h4>
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation">
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">First name</label>
@@ -121,15 +125,15 @@
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="you@gmail.com">
                 <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
+                  Please enter a valid email address.
                 </div>
               </div>
   
               <div class="col-12">
                 <label for="address" class="form-label">Password</label>
-                <input type="text" class="form-control" id="address" placeholder="********" required>
+                <input type="text" class="form-control" id="password" placeholder="********" required>
                 <div class="invalid-feedback">
-                  Please enter your shipping address.
+                  Please enter your password.
                 </div>
               </div>
   
@@ -148,6 +152,7 @@
           </form>
         </div>
       </div>
+      <!-- form end -->
     </div>
   </div>
 
